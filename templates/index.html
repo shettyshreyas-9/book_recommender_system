@@ -19,8 +19,8 @@
         <p class="navbar-brand">My Book Recommender</p>
 
         <ul class="nav navbar-nav">
-            <li> <a href=" ">Home</a> </li>
-            <li> <a href="">Recommend</a> </li>
+            <li> <a href="/">Home</a> </li>
+            <li> <a href="/recommend">Recommend</a> </li>
             <li> <a href="">Contact</a> </li>
         </ul>
     </nav>
@@ -32,90 +32,28 @@
                 <h1 class="text-white" style="font-size: 50px;">Top 50 Books</h1>
             </div>
 
+            {% for i in range(book_name|length) %}
 
-            <!-- 1  -->
+                <!-- 1  -->
 
-            <div class="col-md-3" style="margin-top: 50px;">
-                <div class="card" style="width: 12rem; background-color: black;" >
-                    <!-- <div class="card-body"> -->
-                    <img class="card-img-top" src="http://images.amazon.com/images/P/0439136350.01.MZZZZZZZ.jpg"> <br>
-                    <h2 class="text-white">Harry Potter</h2> <br>
-                    <h4 class="text-white">JK Rowling</h4>
-                    <h4 class="text-white">Votes - 300</h4>
-                    <h4 class="text-white">Rating - 5.6</h4>
-  
-                    <!-- </div> -->
+                <div class="col-md-3" style="margin-top: 50px;">
+                    <div class="card" style="width: 12rem; background-color: black;" >
+                        <!-- <div class="card-body"> -->
+                        <img class="card-img-top" src="{{image[i]}}"> <br>
+                        <h4 class="text-white">{{book_name[i]}}</h4> <br>
+                        <h4 class="text-white">{{author[i]}}</h4>
+                        <h4 class="text-
+                        white">Votes- {{votes[i]}}</h4>
+                        <h4 class="text-white">Rating- {{rating[i]}}</h4>
+    
+                        <!-- </div> -->
+                    </div>
+                    <br>
                 </div>
-                <br>
-            </div>
 
+            {% endfor%}
 
-            <!-- 2 -->
-
-            <div class="col-md-3" style="margin-top: 50px;">
-                <div class="card" style="width: 12rem; background-color: black;" >
-                    <!-- <div class="card-body"> -->
-                    <img class="card-img-top" src="http://images.amazon.com/images/P/0439136350.01.MZZZZZZZ.jpg"> <br>
-                    <h2 class="text-white">Harry Potter</h2> <br>
-                    <h4 class="text-white">JK Rowling</h4>
-                    <h4 class="text-white">Votes - 300</h4>
-                    <h4 class="text-white">Rating - 5.6</h4>
-  
-                    <!-- </div> -->
-                </div>
-                <br>
-            </div>
-
-
-            <!-- 3 -->
             
-            <div class="col-md-3" style="margin-top: 50px;">
-                <div class="card" style="width: 12rem; background-color: black;" >
-                    <!-- <div class="card-body"> -->
-                    <img class="card-img-top" src="http://images.amazon.com/images/P/0439136350.01.MZZZZZZZ.jpg"> <br>
-                    <h2 class="text-white">Harry Potter</h2> <br>
-                    <h4 class="text-white">JK Rowling</h4>
-                    <h4 class="text-white">Votes - 300</h4>
-                    <h4 class="text-white">Rating - 5.6</h4>
-  
-                    <!-- </div> -->
-                </div>
-                <br>
-            </div>
-
-
-            <!-- 4 -->
-            
-            <div class="col-md-3" style="margin-top: 50px;">
-                <div class="card" style="width: 12rem; background-color: black;" >
-                    <!-- <div class="card-body"> -->
-                    <img class="card-img-top" src="http://images.amazon.com/images/P/0439136350.01.MZZZZZZZ.jpg"> <br>
-                    <h2 class="text-white">Harry Potter</h2> <br>
-                    <h4 class="text-white">JK Rowling</h4>
-                    <h4 class="text-white">Votes - 300</h4>
-                    <h4 class="text-white">Rating - 5.6</h4>
-  
-                    <!-- </div> -->
-                </div>
-                <br>
-            </div>
-
-
-            <!-- 5 -->
-            
-            <div class="col-md-3" style="margin-top: 50px;">
-                <div class="card" style="width: 12rem; background-color: black;" >
-                    <!-- <div class="card-body"> -->
-                    <img class="card-img-top" src="http://images.amazon.com/images/P/0439136350.01.MZZZZZZZ.jpg"> <br>
-                    <h2 class="text-white">Harry Potter</h2> <br>
-                    <h4 class="text-white">JK Rowling</h4>
-                    <h4 class="text-white">Votes - 300</h4>
-                    <h4 class="text-white">Rating - 5.6</h4>
-  
-                    <!-- </div> -->
-                </div>
-                <br>
-            </div>
 
             
 
